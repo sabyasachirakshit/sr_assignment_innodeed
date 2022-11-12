@@ -56,6 +56,7 @@ span {
 
 button {
   cursor: pointer;
+ 
 }
 
 .margine {
@@ -73,6 +74,14 @@ button {
   margin: 10px;
 }
 
+.previousSlide,
+.nextSlide::hover {
+  cursor: pointer;
+  margin: 10px;
+  background-color: black;
+  color: white;
+}
+
 .previousSlide {
   transform: rotate(180deg);
 }
@@ -86,6 +95,8 @@ button {
   margin: 5% 5%;
   width: 120px;
   border-radius: 5px;
+  color: white;
+  background-color: rgb(33, 178, 204);
 }
 
 .btnBox {
@@ -94,10 +105,10 @@ button {
 }
 
 .filterBtn:hover {
-  background-color: #ddd;
+  background-color: rgb(44, 196, 77);
 }
 
 .filterBtn.active {
-  background-color: rgba(118, 115, 115, 0.909);
+  background-color: black;
   color: white;
 }

@@ -1,6 +1,7 @@
 import "./App.css";
 import UI from "./components/UI";
 import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
 function App() {
   let [data, setData] = useState(null);
 
@@ -11,6 +12,7 @@ function App() {
   }, []);
   return (
     <>
+      <Navbar />
       <h1>InnoDeed Cars</h1>
       <UI data={data} />
     </>
