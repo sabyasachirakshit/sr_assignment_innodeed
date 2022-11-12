@@ -3,7 +3,7 @@ import logo from "./docs/logo.svg";
 
 function UIRender(props) {
   const carData = props.data;
-  
+  console.log("Car Data:" + carData);
     return (
       <div className="box" style={{ marginRight: "55px" }}>
         <div className="capital text">{carData.bodyType}</div>
